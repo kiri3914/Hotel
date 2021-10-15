@@ -5,40 +5,40 @@ from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIV
 
 
 class CategoryRoomListCreateAPIView(ListCreateAPIView):
-    queryset = CategoryRoom
+    queryset = CategoryRoom.objects.all()
     serializer_class = CategoryRoomSerializer
 
 
 class CategoryFurnitureListCreateAPIView(ListCreateAPIView):
-    queryset = CategoryFurniture
+    queryset = CategoryFurniture.objects.all()
     serializer_class = CategoryFurnitureSerializer
 
 
 class RoomListCreateAPIView(ListCreateAPIView):
-    queryset = Room
+    queryset = Room.objects.all()
     serializer_class = RoomSerializer
 
 
 class FurnitureListCreateAPIView(ListCreateAPIView):
-    queryset = Furniture
+    queryset = Furniture.objects.all()
     serializer_class = FurnitureSerializer
 
 
 class CategoryRoomDetailAPIView(RetrieveUpdateDestroyAPIView):
-    queryset = CategoryRoom
+    queryset = CategoryRoom.objects.all()
     serializer_class = CategoryRoomSerializer
 
 
 class CategoryFurnitureDetailAPIView(RetrieveUpdateDestroyAPIView):
-    queryset = CategoryFurniture
+    queryset = CategoryFurniture.objects.all()
     serializer_class = CategoryFurnitureSerializer
 
 
 class RoomDetailAPIView(RetrieveUpdateDestroyAPIView):
-    queryset = Room
+    queryset = Room.objects.all()
     serializer_class = RoomSerializer
 
 
 class FurnitureDetailAPIView(RetrieveUpdateDestroyAPIView):
-    queryset = Furniture
+    queryset = Furniture.objects.all()
     serializer_class = FurnitureSerializer
