@@ -33,6 +33,7 @@ class Room(models.Model):
     img = models.ImageField(verbose_name='Фото комнаты', upload_to='room', blank=True)
     furniture = models.ManyToManyField('Furniture', verbose_name='Мебель')
     count_windows = models.IntegerField(verbose_name='Количество Окан')
+    price = models.DecimalField(max_digits=9, decimal_places=2, verbose_name='Цена')
     slug = models.SlugField(max_length=255, verbose_name='Слаг')
 
     def __str__(self):
